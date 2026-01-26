@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Théo Pina — Étudiant MMI (Graphisme)</title>
+    <meta name="description" content="Portfolio de Théo Pina, étudiant MMI à Corte (Graphisme). Identité visuelle, affiches, design digital et projets créatifs." />
+
+    <meta property="og:title" content="Théo Pina — Portfolio" />
+    <meta property="og:description" content="Étudiant MMI (Graphisme) à Corte. Découvrez mes projets et mon univers visuel." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/og-image.jpg" />
+
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Aller au contenu</a>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">FIGHT<span class="highlight">FOLIO</span></div>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#hero" class="nav-link">Accueil</a></li>
+                <li><a href="#about" class="nav-link">À Propos</a></li>
+                <li><a href="#skills" class="nav-link">Compétences</a></li>
+                <li><a href="#projects" class="nav-link">Projets</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <button class="hamburger" type="button" aria-label="Ouvrir le menu" aria-controls="nav-menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main id="main">
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="punch-line">
+                    <span class="round-number">ROUND 1</span>
+                    <h1 class="hero-title">
+                        <span class="glitch" data-text="THÉO PINA">THÉO PINA</span>
+                    </h1>
+                    <p class="hero-subtitle">ÉTUDIANT MMI × GRAPHISME × DESIGN DIGITAL</p>
+
+                    <div class="hero-stats">
+                        <div class="stat-box">
+                            <span class="stat-number">1</span>
+                            <span class="stat-label">ANNÉE MMI</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">PROJETS</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number">100</span>
+                            <span class="stat-label">MOTIVATION</span>
+                        </div>
+                    </div>
+
+                    <a href="#projects" class="cta-button">
+                        <span>VOIR MES COMBATS</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="boxing-ring"></div>
+            <canvas id="particleCanvas"></canvas>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="round-tag">ROUND 2</span>
+                    <h2 class="section-title">MON CORNER</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="image-frame">
+                            <img src="https://images.unsplash.com/photo-1509563268479-0f004cf3f58b?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Ym94ZXxlbnwwfHwwfHx8MA%3D%3D" alt="image indisponible">
+                            <div class="frame-corner tl"></div>
+                            <div class="frame-corner tr"></div>
+                            <div class="frame-corner bl"></div>
+                            <div class="frame-corner br"></div>
+                        </div>
+                    </div>
+
+                    <div class="about-text">
+                        <h3 class="about-subtitle">PRÉPARATION DU CHAMPION</h3>
+                        <p class="about-description">
+                            Étudiant en première année de MMI à Corte, je me spécialise en graphisme et design digital,
+                            avec un intérêt pour l’identité visuelle, la mise en page et la création de contenus.
+                        </p>
+                        <p class="about-description">
+                            Mon terrain de jeu : Photoshop, Illustrator, Figma et tout ce qui me permet de créer
+                            des univers visuels cohérents, impactants et modernes.
+                        </p>
+
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <span class="feature-icon"></span>
+                                <span class="feature-text">Identité visuelle</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon"></span>
+                                <span class="feature-text">Affiche & Print</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon"></span>
+                                <span class="feature-text">Design réseaux</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon"></span>
+                                <span class="feature-text">Direction artistique</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="round-tag">ROUND 3</span>
+                    <h2 class="section-title">MES TECHNIQUES</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon"></div>
+                        <h3 class="skill-name">GRAPHISME</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85">
+                                <span class="progress-text">85%</span>
+                            </div>
+                        </div>
+                        <ul class="skill-list">
+                            <li>Photoshop</li>
+                            <li>Illustrator</li>
+                            <li>InDesign</li>
+                            <li>Figma</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon"></div>
+                        <h3 class="skill-name">DA & CONCEPT</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="75">
+                                <span class="progress-text">75%</span>
+                            </div>
+                        </div>
+                        <ul class="skill-list">
+                            <li>Recherche visuelle</li>
+                            <li>Moodboards</li>
+                            <li>Systèmes graphiques</li>
+                            <li>Typographie</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon"></div>
+                        <h3 class="skill-name">RÉSEAUX</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="70">
+                                <span class="progress-text">70%</span>
+                            </div>
+                        </div>
+                        <ul class="skill-list">
+                            <li>Templates</li>
+                            <li>Carrousels</li>
+                            <li>Stories</li>
+                            <li>Mini guidelines</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon"></div>
+                        <h3 class="skill-name">WEB (BASE)</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="60">
+                                <span class="progress-text">60%</span>
+                            </div>
+                        </div>
+                        <ul class="skill-list">
+                            <li>HTML / CSS</li>
+                            <li>Intégration</li>
+                            <li>Responsive</li>
+                            <li>Notions JS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="round-tag">ROUND 4</span>
+                    <h2 class="section-title">MES COMBATS</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Projets fictifs (à remplacer par les tiens) -->
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="C:\Users\ACER\Desktop\a7fdfedd-749f-4722-8450-8b24bae8ba8c.jpg" alt="Projet 1 : identité visuelle (image à remplacer)">
+                            <div class="project-overlay">
+                                <h3 class="project-title">IDENTITÉ VISUELLE</h3>
+                                <p class="project-description">Affiche et visuels pour la Corsica Games Week 4.</p>
+                                <div class="project-tags">
+                                </div>
+                                <a href="#" class="project-link">Voir le projet →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="C:\Users\ACER\Desktop\download.jpg" alt="Projet 2 : affiche (image à remplacer)">
+                            <div class="project-overlay">
+                                <h3 class="project-title"><Label>Label de musique</Label></h3>
+                                <p class="project-description">Logo d'un de mes projets : créer un label de musique..</p>
+                                <div class="project-tags">
+                                </div>
+                                <a href="#" class="project-link">Voir le projet →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="C:\Users\ACER\Desktop\Capture d'écran 2026-01-16 153310.png" alt="Projet 3 : réseaux sociaux ">
+                            <div class="project-overlay">
+                                <h3 class="project-title">Affiche Parfum</h3>
+                                <p class="project-description">Voici a présent l'affiche d'un parfum fictif réalisé par mes soins.</p>
+                                <a href="#" class="project-link">Voir le projet →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                  
+                                <a href="#" class="project-link">Voir le projet →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="round-tag">FINAL ROUND</span>
+                    <h2 class="section-title">ME CONTACTER</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>PRÊT À COLLABORER ?</h3>
+                        <p>
+                            Pour un projet, un stage, ou une collaboration : contact direct ci-dessous.
+                        </p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <span class="contact-icon"></span>
+                                <div>
+                                    <span class="contact-label">Email</span>
+                                    <a href="mailto:theo.pina@icloud.com">theo.pina@icloud.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <span class="contact-icon"></span>
+                                <div>
+                                    <span class="contact-label">Téléphone</span>
+                                    <a href="tel:+33663567093">06 63 56 70 93</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <span class="contact-icon"></span>
+                                <div>
+                                    <span class="contact-label">Localisation</span>
+                                    <span>Corte, Corse, France</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tu mettras tes vrais liens plus tard -->
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+                            <a href="#" class="social-link" aria-label="Behance">Be</a>
+                            <a href="#" class="social-link" aria-label="Instagram">Ig</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required placeholder=" ">
+                                <label for="name">Votre nom</label>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required placeholder=" ">
+                                <label for="email">Votre email</label>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" required placeholder=" ">
+                                <label for="subject">Sujet</label>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                                <label for="message">Votre message</label>
+                            </div>
+
+                            <button type="submit" class="submit-button">
+                                <span>ENVOYER LE MESSAGE</span>
+                                <span class="button-icon"></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Théo Pina - Tous droits réservés</p>
+                <p class="footer-tagline">Étudiant MMI - Corte, Corse</p>
+                <p class="footer-quote">"Chaque pixel compte, chaque ligne est un coup porté vers l'excellence"</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
