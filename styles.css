@@ -123,6 +123,8 @@ body {
     min-height: 44px;
     align-items: center;
     justify-content: center;
+    background: none;
+    border: none;
 }
 
 .hamburger span {
@@ -818,13 +820,15 @@ section {
 .social-link {
     width: 50px;
     height: 50px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     background: rgba(204, 0, 0, 0.1);
     border: 2px solid var(--primary-red);
     color: var(--light-text);
+    text-decoration: none;
     transition: var(--transition);
+    font-style: normal;
 }
 
 .social-link:hover {
@@ -928,6 +932,7 @@ section {
     background: var(--darker-bg);
     padding: 3rem 0;
     border-top: 2px solid var(--primary-red);
+    font-style: normal !important;
 }
 
 .footer-content {
@@ -937,18 +942,27 @@ section {
 .footer-content p {
     color: var(--gray-text);
     margin: 0.5rem 0;
+    font-style: normal !important;
 }
 
 .footer-tagline {
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 2px;
     color: var(--primary-red);
+    font-style: normal !important;
 }
 
 .footer-quote {
-    font-style: normal;
+    font-style: normal !important;
     font-size: 0.9rem;
     margin-top: 1rem;
+}
+
+/* Neutralise tout italique éventuel dans le footer */
+.footer em,
+.footer i,
+.footer cite {
+    font-style: normal !important;
 }
 
 /* ========================================
@@ -1009,7 +1023,7 @@ section {
 }
 
 /* ========================================
-   ACCESSIBILITÉ (ajout)
+   ACCESSIBILITÉ
 ======================================== */
 .skip-link {
     position: absolute;
@@ -1020,6 +1034,7 @@ section {
     padding: 10px 14px;
     z-index: 2000;
     border-radius: 4px;
+    font-style: normal;
 }
 
 .skip-link:focus {
