@@ -2,7 +2,8 @@
    VARIABLES & RESET
 ======================================== */
 :root {
-    --primary-red: #CC0000;
+    --primary-red: #E53935;
+    --primary-red-dark: #8B0000;
     --dark-bg: #0a0a0a;
     --darker-bg: #050505;
     --light-text: #ffffff;
@@ -157,8 +158,8 @@ body {
         0deg,
         transparent,
         transparent 2px,
-        rgba(204, 0, 0, 0.03) 2px,
-        rgba(204, 0, 0, 0.03) 4px
+        rgba(229, 57, 53, 0.03) 2px,
+        rgba(229, 57, 53, 0.03) 4px
     );
     pointer-events: none;
 }
@@ -170,7 +171,7 @@ body {
     transform: translate(-50%, -50%);
     width: 80%;
     height: 80%;
-    border: 3px solid rgba(204, 0, 0, 0.2);
+    border: 3px solid rgba(229, 57, 53, 0.2);
     pointer-events: none;
 }
 
@@ -178,7 +179,7 @@ body {
 .boxing-ring::after {
     content: '';
     position: absolute;
-    background: rgba(204, 0, 0, 0.1);
+    background: rgba(229, 57, 53, 0.1);
 }
 
 .boxing-ring::before {
@@ -291,7 +292,7 @@ body {
 }
 
 .stat-box {
-    background: rgba(204, 0, 0, 0.1);
+    background: rgba(229, 57, 53, 0.1);
     border: 2px solid var(--primary-red);
     padding: 1.5rem 2rem;
     display: flex;
@@ -302,7 +303,7 @@ body {
 }
 
 .stat-box:hover {
-    background: rgba(204, 0, 0, 0.2);
+    background: rgba(229, 57, 53, 0.2);
     transform: translateY(-5px);
 }
 
@@ -325,7 +326,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    background: var(--primary-red);
+    background: var(--primary-red-dark);
     color: var(--light-text);
     padding: 1.2rem 2.5rem;
     text-decoration: none;
@@ -349,7 +350,7 @@ body {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.15);
     transition: var(--transition);
 }
 
@@ -358,8 +359,9 @@ body {
 }
 
 .cta-button:hover {
+    background: #6f0000;
     transform: scale(1.05);
-    box-shadow: 0 0 30px rgba(204, 0, 0, 0.5);
+    box-shadow: 0 0 30px rgba(139, 0, 0, 0.5);
 }
 
 .button-gloves {
@@ -485,7 +487,7 @@ section {
 .about-subtitle {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.8rem;
-    color: var(--primary-red);
+    color: #ff6b6b;
     letter-spacing: 2px;
     margin-bottom: 1.5rem;
 }
@@ -508,14 +510,14 @@ section {
     display: flex;
     align-items: center;
     gap: 1rem;
-    background: rgba(204, 0, 0, 0.05);
+    background: rgba(229, 57, 53, 0.05);
     padding: 1rem;
     border-left: 3px solid var(--primary-red);
     transition: var(--transition);
 }
 
 .feature-item:hover {
-    background: rgba(204, 0, 0, 0.1);
+    background: rgba(229, 57, 53, 0.1);
     transform: translateX(5px);
 }
 
@@ -543,7 +545,7 @@ section {
 
 .skill-card {
     background: var(--darker-bg);
-    border: 2px solid rgba(204, 0, 0, 0.2);
+    border: 2px solid rgba(229, 57, 53, 0.2);
     padding: 2rem;
     text-align: center;
     transition: var(--transition);
@@ -558,7 +560,7 @@ section {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(204, 0, 0, 0.1), transparent);
+    background: linear-gradient(90deg, transparent, rgba(229, 57, 53, 0.1), transparent);
     transition: var(--transition);
 }
 
@@ -569,7 +571,7 @@ section {
 .skill-card:hover {
     border-color: var(--primary-red);
     transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(204, 0, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(229, 57, 53, 0.3);
 }
 
 .skill-icon {
@@ -582,13 +584,13 @@ section {
     font-size: 1.5rem;
     letter-spacing: 2px;
     margin-bottom: 1.5rem;
-    color: var(--primary-red);
+    color: #ff6b6b;
 }
 
 .skill-bar {
     width: 100%;
     height: 8px;
-    background: rgba(204, 0, 0, 0.1);
+    background: rgba(229, 57, 53, 0.1);
     margin: 1.5rem 0;
     position: relative;
     overflow: hidden;
@@ -623,7 +625,7 @@ section {
 .skill-list li {
     padding: 0.5rem 0;
     color: var(--gray-text);
-    border-bottom: 1px solid rgba(204, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(229, 57, 53, 0.1);
     transition: var(--transition);
 }
 
@@ -669,7 +671,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(204, 0, 0, 0.95), rgba(10, 10, 10, 0.95));
+    background: linear-gradient(135deg, rgba(139, 0, 0, 0.95), rgba(10, 10, 10, 0.95));
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -736,7 +738,7 @@ section {
 
 .project-link:hover {
     background: var(--light-text);
-    color: var(--primary-red);
+    color: var(--primary-red-dark);
 }
 
 /* ========================================
@@ -755,7 +757,7 @@ section {
 .contact-info h3 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 2rem;
-    color: var(--primary-red);
+    color: #ff6b6b;
     letter-spacing: 2px;
     margin-bottom: 1.5rem;
 }
@@ -775,14 +777,14 @@ section {
     align-items: center;
     gap: 1.5rem;
     padding: 1.5rem;
-    background: rgba(204, 0, 0, 0.05);
+    background: rgba(229, 57, 53, 0.05);
     margin-bottom: 1rem;
     border-left: 3px solid var(--primary-red);
     transition: var(--transition);
 }
 
 .contact-item:hover {
-    background: rgba(204, 0, 0, 0.1);
+    background: rgba(229, 57, 53, 0.1);
     transform: translateX(5px);
 }
 
@@ -823,7 +825,7 @@ section {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: rgba(204, 0, 0, 0.1);
+    background: rgba(229, 57, 53, 0.1);
     border: 2px solid var(--primary-red);
     color: var(--light-text);
     text-decoration: none;
@@ -832,14 +834,15 @@ section {
 }
 
 .social-link:hover {
-    background: var(--primary-red);
+    background: var(--primary-red-dark);
+    border-color: var(--primary-red-dark);
     transform: translateY(-5px);
 }
 
 .contact-form-wrapper {
     background: var(--darker-bg);
     padding: 2rem;
-    border: 2px solid rgba(204, 0, 0, 0.2);
+    border: 2px solid rgba(229, 57, 53, 0.2);
 }
 
 .contact-form {
@@ -855,8 +858,8 @@ section {
 .form-group input,
 .form-group textarea {
     width: 100%;
-    background: rgba(204, 0, 0, 0.05);
-    border: 2px solid rgba(204, 0, 0, 0.2);
+    background: rgba(229, 57, 53, 0.05);
+    border: 2px solid rgba(229, 57, 53, 0.2);
     padding: 1rem;
     color: var(--light-text);
     font-size: 1rem;
@@ -868,7 +871,7 @@ section {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--primary-red);
-    background: rgba(204, 0, 0, 0.1);
+    background: rgba(229, 57, 53, 0.1);
 }
 
 .form-group label {
@@ -902,7 +905,7 @@ section {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    background: var(--primary-red);
+    background: var(--primary-red-dark);
     color: var(--light-text);
     padding: 1.2rem 2rem;
     border: none;
@@ -916,9 +919,9 @@ section {
 }
 
 .submit-button:hover {
-    background: #ff0000;
+    background: #6f0000;
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(204, 0, 0, 0.3);
+    box-shadow: 0 10px 20px rgba(139, 0, 0, 0.3);
 }
 
 .button-icon {
@@ -958,7 +961,6 @@ section {
     margin-top: 1rem;
 }
 
-/* Neutralise tout italique éventuel dans le footer */
 .footer em,
 .footer i,
 .footer cite {
