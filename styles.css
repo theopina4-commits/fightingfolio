@@ -368,13 +368,15 @@ section {
     margin-bottom: 4rem;
 }
 
+/* CORRIGÉ : meilleur contraste pour le badge */
 .round-tag {
     display: inline-block;
-    color: var(--primary-red);
+    background-color: #111111;   /* fond très sombre */
+    color: var(--accent-gold);   /* texte doré très clair */
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1rem;
     letter-spacing: 3px;
-    border: 2px solid var(--primary-red);
+    border: 2px solid var(--accent-gold);
     padding: 0.5rem 1.5rem;
     margin-bottom: 1rem;
 }
@@ -980,6 +982,7 @@ section {
         font-size: 2rem;
     }
 }
+
 /* ========================================
    ACCESSIBILITÉ (ajout)
 ======================================== */
